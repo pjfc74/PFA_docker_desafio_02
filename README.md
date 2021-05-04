@@ -20,7 +20,7 @@ Apenas executando o comando "docker-compose up" tudo já deve ser levantado e fi
 
 Para utilizar, tendo o docker funcionando em sua máquina execute as seguintes linhas em seu terminal a partir da pasta da aplicação:
 
-docker-compose up
+docker-compose up -d --build
 
 Em seguida, abra o seguinte endereço em seu navegador:
 
