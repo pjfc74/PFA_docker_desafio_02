@@ -1,5 +1,5 @@
 #  Curso FullCycle
-##  PFA - Programa FullCycle de Aceleração - Edição Docker - Desafio 01
+##  PFA - Programa FullCycle de Aceleração - Edição Docker - Desafio 02
 ### Aluno: Pedro José Freire Castro
 
 O desafio consiste em criar um docker-compose.yaml com 3 serviços, um para cada tecnologia, a partir do resultado do desafio 1. Você deverá configurar os seguintes pontos:
