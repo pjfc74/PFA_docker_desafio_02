@@ -15,13 +15,6 @@ O desafio consiste em criar um docker-compose.yaml com 3 serviços, um para cada
 
 Apenas executando o comando "docker-compose up" tudo já deve ser levantado e ficar disponível.
 
-
-As imagens desse segundo desafio foram disponibilizadas no seguinte local:
-
-Hub Docker: https://hub.docker.com/repository/docker/pjfcastro/pfa_desafio02
-
-Os arquivos fonte do programa e as imagens geradas devem estar disponibilizadas no github. Este aqui é o repositório desse conteúdo.
-
 ```
 # Como executar a aplicação...
 
