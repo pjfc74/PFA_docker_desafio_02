@@ -7,6 +7,7 @@ services:
         volumes:
             - ./mysql/dbdata:/var/lib/mysql
             - ./mysql:/docker-entrypoint-initdb.d
+        restart: always
         environment:
             - MYSQL_ROOT_PASSWORD=root
         networks: 
@@ -16,9 +17,9 @@ services:
         #container-name: webcontainer
         build: ./php
         volumes: 
-            - ./php/src:/var/www/html/
-        #RUN docker-php-ext-install mysqli  
-                  
+            - ./php/src:/var/www/html/        
+        entrypoint: dockerize -wait tcp://mysql:3306 -timeout 20s apache2-foreground
+        restart: always
         expose: 
             - 80
         depends_on:
@@ -34,6 +35,7 @@ services:
             - 8000:8000
         volumes: 
             - ./nginx:/etc/nginx/conf.d
+        restart: always
         depends_on: 
             - php
         networks: 
